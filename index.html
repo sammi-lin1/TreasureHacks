@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div class="container h-100" id="my-grid">
@@ -12,7 +13,31 @@
         </div>
         <div class="col-6">
           <!-- Right column content goes here -->
-          <div>Tthe right side</div>
+          <div>
+            <header> 
+              <h1>My Task List</h1>
+              <form action="" id="new-task-form">
+                <input type="text" id="new-task-input" placeholder="What do you have planned?"/>
+                <input type="submit" id="new-task-submit" value="Add Task"/>
+              </form>
+            </header>
+            <main>
+              <section class="task-list">
+                <h2>Tasks</h2>
+                <div id="tasks">
+                  <div class="task">
+                    <div class="content">
+                      <input type="text" class="text" value="my task" readonly/>
+                    </div>
+                    <div class="actions">
+                      <button class="edit">Edit</button>
+                      <button class="delete">Delete</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </main>
+          </div>
         </div>
       </div>
     </div>
@@ -24,5 +49,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="App.js"></script>
   </body>
 </html>
