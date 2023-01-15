@@ -1,36 +1,44 @@
-// window.addEventListener('load',() => {
-//     const form = document.getElementById("new-task-form");
-//     const input = document.querySelector("#new-task-input");
-//     const list_el = document.getElementById("tasks");
-
-//     form.addEventListener('submit',(e) => {
-//         e.preventDefault();
-//         const task = input.value;
-//         if (!task) {
-//             alert("please provide task");
-//         }
-
-//         const task_el = document.createElement("div");
-//         task_el.classList.add("task");
-//         const task_content_el = document.createElement("div");
-//         task_content_el.classList.add("content");
-//         task_content_el.innerText=task;
-        
-//         const task_input_el = document.createElement("input");
-//         task_input_el.classList.add("text");
-//         task_input_el.type="text";
-//         task_input_el.value=task;
-//         task_input_el.setAttribute("readonly","readonly");
+// Create a "close" button and append it to each list ite
+// closeBtn = document.createElement("button");
+// closeBtn.appendChild(document.createTextNode('Del'))
+// // loop through ul li items and add btn child to each li
+// taskList = document.querySelector("#myUL").getElementsByTagName("li");
+// alert(taskList.values)
 
 
-//         task_el.appendChild(task_content_el);
-//         task_content_el.appendChild(task_input_el);
-//         list_el.appendChild(task_el);
+// function to add new task
+function newElement(){
+    var li = document.createElement("li");
+    var userInput = document.querySelector("#myInput").value;
+    
+    var text = document.createTextNode(userInput);
+    li.appendChild(text); // add text to li
+     // add li to ul
+    if (userInput == ''){
+        alert("You must provide a task");
+    }
+    document.querySelector("#myUL").appendChild(li)
+    // clear text field
+    document.getElementById("myInput").value ='';
+
+    // to each li -> add child that is a button
+    var deleteBtn = document.createElement("button");
+    // add text to button
+    var btnText = document.createTextNode("delete");
+    deleteBtn.appendChild(btnText);
+    // give class to button
+    deleteBtn.classList.add("deleteBtn");
+    // add delete button to li
+    li.appendChild(deleteBtn);
+    
+    // add event listener to button
+    deleteBtn.addEventListener("click", function(){
+        this.parentNode.remove();
+    });
 
 
-//     })
 
-// })
+}
 
 /* music container */
 

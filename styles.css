@@ -56,6 +56,67 @@ p {
 }
 
 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.right-container{
+    width:70%;
+    min-width: 450px;
+    background:rgb(129, 220, 167);
+    min-height: 350px;
+    border-radius:12px;
+    text-align:center;
+
+}
+#myInput{
+    min-height:50px;
+    padding:10px;
+    font-weight:500;
+    border-radius:5px;
+}
+#myInput:focus {
+    border: 1px solid blue; /* border color when input is focused */
+    
+    color: #000; /* text color when input is focused */
+    box-shadow: 0 0 5px #4CAF50; /* box-shadow when input is focused */
+}
+
+.addBtn {
+    min-height: 40px;
+    text-align: center;
+    line-height: 35px; /* adjust this value to center the text vertically */
+}
+
+
+
+.right-container ul {
+    list-style:none;
+    padding-inline-start:0;
+    padding: 50px 50px;
+}
+
+.right-container li {
+    background-color:#ffffff;
+    line-height:50px;
+    border:1px solid;
+    border-radius:5px;
+    text-align:left;
+    padding-left:25px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.deleteBtn {
+    background-color: #f44336;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
  /* music container */
 
  @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
