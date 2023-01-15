@@ -1,5 +1,5 @@
 #my-grid{
-    min-height:100vh;
+    /* min-height:100vh; */
  }
 
 .container{
@@ -10,10 +10,203 @@
 }
 
 .right-container{
-    width:40%;
+    width:70%;
     min-width: 450px;
-    background:rgb(134, 134, 255);
-    min-height: 250px;
-    border-radius:15px;
+    background:rgb(129, 220, 167);
+    min-height: 350px;
+    border-radius:12px;
+    text-align:center;
 
 }
+#myInput{
+    min-height:50px;
+    padding:10px;
+    font-weight:500;
+    border-radius:5px;
+}
+#myInput:focus {
+    border: 1px solid blue; /* border color when input is focused */
+    
+    color: #000; /* text color when input is focused */
+    box-shadow: 0 0 5px #4CAF50; /* box-shadow when input is focused */
+}
+
+.addBtn {
+    min-height: 40px;
+    text-align: center;
+    line-height: 35px; /* adjust this value to center the text vertically */
+}
+
+
+
+.right-container ul {
+    list-style:none;
+    padding-inline-start:0;
+    padding: 50px 50px;
+}
+
+.right-container li {
+    background-color:#ffffff;
+    line-height:50px;
+    border:1px solid;
+    border-radius:5px;
+    text-align:left;
+    padding-left:25px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.deleteBtn {
+    background-color: #f44336;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+ /* music container */
+
+ @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    0deg,
+    rgba(247, 247, 247, 1) 23.8%,
+    rgba(252, 221, 221, 1) 92%
+  );
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.music-container {
+  background-color: #fff;
+  height: 30vh;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
+  display: flex;
+  padding: 20px 30px;
+  position: relative;
+  margin: 100px 0;
+  z-index: 10;
+}
+
+.img-container {
+  position: relative;
+  width: 110px;
+}
+
+.img-container::after {
+  content: '';
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, 50%);
+}
+
+.img-container img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 110px;
+  width: inherit;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: rotate 3s linear infinite;
+
+  animation-play-state: paused;
+}
+
+.music-container.play .img-container img {
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.action-btn {
+  background-color: #fff;
+  border: 0;
+  color: #dfdbdf;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.action-btn.action-btn-big {
+  color: #cdc2d0;
+  font-size: 30px;
+}
+
+.action-btn:focus {
+  outline: 0;
+}
+
+.music-info {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 70%;
+  /* padding: 10px 10px 10px 150px; */
+  opacity: 1;
+  margin-left: 25%;
+  margin-top: 3.5%;
+  /* transition: transform 0.3s ease-in, opacity 0.3s ease-in; */
+  z-index: 0;
+}
+
+/* .music-container.play .music-info {
+  opacity: 1;
+  transform: translateY(-100%);
+} */
+
+.music-info h4 {
+  margin: 0;
+}
+
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 100%;
+}
+
+.progress {
+  background-color: #fe8daa;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+ /* end music container */
