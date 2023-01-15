@@ -2,3 +2,18 @@
     min-height:100vh;
  }
 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.right-container{
+    width:40%;
+    min-width: 450px;
+    background:rgb(134, 134, 255);
+    min-height: 250px;
+    border-radius:15px;
+
+}
