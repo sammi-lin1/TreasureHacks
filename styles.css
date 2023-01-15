@@ -62,20 +62,25 @@ p {
 }
 
 
-.container{
+/* .container{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-}
+
+} */
 
 .right-container{
-    width:70%;
-    min-width: 450px;
-    background:rgb(129, 220, 167);
-    min-height: 350px;
-    border-radius:12px;
+    padding-top:10px;
+    min-width: 85%;
+    font-family: sans-serif;
+    overflow: auto;
+    background:rgb(255, 255, 255,.5);
+    height: 450px;
+    border-radius:30px;
     text-align:center;
+    color:#000;
+    margin-top:28%;
 
 }
 #myInput{
@@ -83,10 +88,12 @@ p {
     padding:10px;
     font-weight:500;
     border-radius:5px;
+    border:none;
+    min-width:65%;
 }
 #myInput:focus {
-    border: 1px solid blue; /* border color when input is focused */
-    
+    /* border: 1px solid blue; */
+    border:none;
     color: #000; /* text color when input is focused */
     box-shadow: 0 0 5px #4CAF50; /* box-shadow when input is focused */
 }
@@ -102,25 +109,31 @@ p {
 .right-container ul {
     list-style:none;
     padding-inline-start:0;
-    padding: 50px 50px;
+    padding: 30px 30px;
+
 }
 
 .right-container li {
     background-color:#ffffff;
-    line-height:50px;
-    border:1px solid;
+    line-height:35px;
+    border:none;
     border-radius:5px;
     text-align:left;
     padding-left:25px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    margin-top:10px;
     display: flex;
     justify-content:space-between;
 }
 
 .deleteBtn {
-    background-color: #f44336;
+    background-color: #ff7e47;
     color: #fff;
     border-radius: 5px;
     padding: 5px;
+    border:none;
 }
 
  /* music container */

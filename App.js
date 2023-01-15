@@ -16,6 +16,7 @@ function newElement(){
      // add li to ul
     if (userInput == ''){
         alert("You must provide a task");
+        return;
     }
     document.querySelector("#myUL").appendChild(li)
     // clear text field
@@ -24,7 +25,7 @@ function newElement(){
     // to each li -> add child that is a button
     var deleteBtn = document.createElement("button");
     // add text to button
-    var btnText = document.createTextNode("delete");
+    var btnText = document.createTextNode("Done!");
     deleteBtn.appendChild(btnText);
     // give class to button
     deleteBtn.classList.add("deleteBtn");
