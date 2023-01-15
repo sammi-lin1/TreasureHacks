@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+#ZenStudy{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 78px;
+  color: #ffffff;
+}
+
+h2{
+  color:white;
+}
+
 .body{
     background-color: #1B998B;
     font-family: "Nunito";
@@ -69,7 +80,7 @@ p {
 .right-container{
     padding-top:10px;
     min-width: 85%;
-    font-family: sans-serif;
+
     overflow: auto;
     background:rgb(255, 255, 255,.5);
     height: 450px;
@@ -84,7 +95,7 @@ p {
     min-height:50px;
     padding:10px;
     font-weight:500;
-    border-radius:5px;
+    border-radius:10px;
     border:none;
     min-width:65%;
 }
@@ -99,6 +110,7 @@ p {
     min-height: 40px;
     text-align: center;
     line-height: 35px; /* adjust this value to center the text vertically */
+    border-radius: 10px
 }
 
 
@@ -114,7 +126,7 @@ p {
     background-color:#ffffff;
     line-height:35px;
     border:none;
-    border-radius:5px;
+    border-radius:10px;
     text-align:left;
     padding-left:25px;
     padding-right: 5px;
@@ -128,7 +140,7 @@ p {
 .deleteBtn {
     background-color: #ff7e47;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 5px;
     border:none;
 }
@@ -148,7 +160,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Lato', sans-serif;
+
   margin: 0;
 }
 
