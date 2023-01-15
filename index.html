@@ -36,13 +36,13 @@
             </div>
           </div>
     
-          <audio src="music/midsommar.mp3" id="audio"></audio>
+          <audio src="music/wistful-rain.mp3" id="audio"></audio>
 
           <div class="navigation">
             <button id="prev" class="action-btn">
               <i class="fas fa-backward"></i>
             </button>
-            <button id="play" class="action-btn action-btn-big">
+            <button id="play" class="action-btn">
               <i class="fas fa-play"></i>
             </button>
             <button id="next" class="action-btn">
@@ -50,6 +50,17 @@
             </button>
 
           </div>
+        </div>
+
+        <div class="music-type-container">
+          <button onclick="changeMusicType('cloud')" id="cloud-button" class="music-type-buttons"
+          data-toggle="tooltip" data-placement="bottom" title="ambience">
+            <img src="images/cloud.png" id="cloud-img" class="'music-type-img">
+          </button>
+          <button onclick="changeMusicType('lofi')" id="headphone-button" class="music-type-buttons"
+          data-toggle="tooltip" data-placement="bottom" title="lofi">
+            <img src="images/headphone.png" id="headphone-img" class="music-type-img">
+          </button>
         </div>
 
       </div>
