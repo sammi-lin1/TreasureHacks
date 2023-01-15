@@ -59,11 +59,11 @@ p {
 
 
 #timer-button{
-    border-radius: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    color:#ff7e47
-
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  color:#ff7e47;
+  font-weight:bold;
 }
 
 /* MODALS */
@@ -115,10 +115,15 @@ p {
     min-height: 40px;
     text-align: center;
     line-height: 35px; /* adjust this value to center the text vertically */
-    border-radius: 10px
+    border-radius: 10px;
+    background-color: #00AEC9;
+    border-color: #00AEC9;
 }
 
-
+.addBtn:hover {
+  background-color: rgb(1, 155, 179);
+  border-color: rgb(1, 155, 179);
+}
 
 .right-container ul {
     list-style:none;
