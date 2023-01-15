@@ -54,7 +54,7 @@ const progressContainer = document.getElementById('progress-container');
 const cover = document.getElementById('cover');
 
 // Song titles
-let songs = ['blue-boi', 'purple-cat'];
+let songs = ['blue-boi', 'purple-cat', 'lost-in-thought', 'lost', 'fragments'];
 
 // Keep track of song
 let songIndex = 0;
@@ -131,7 +131,7 @@ function setProgress(e) {
 function changeMusicType(type) {
   console.log(type)
   if (type == 'cloud') {
-    songs = ['midsommar', 'wistful-rain'];
+    songs = ['midsommar', 'wistful-rain', '5AM', 'hiraeth'];
     // const isPlaying = musicContainer.classList.contains('play');
 
     songIndex = 0;
@@ -140,7 +140,7 @@ function changeMusicType(type) {
 
   }
   else if (type == 'lofi') {
-    songs = ['blue-boi', 'purple-cat'];
+    songs = ['blue-boi', 'purple-cat', 'lost-in-thought', 'lost', 'fragments'];
     songIndex = 0;
     loadSong(songs[songIndex]);
     playSong();

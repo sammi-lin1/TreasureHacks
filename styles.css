@@ -231,15 +231,15 @@ body {
   margin: 0 20px;
 }
 
-.action-btn:focus {
-  outline: 0;
+.action-btn:hover {
+  color: #ff7e47;
 }
 
 .music-info {
   background-color: transparent;
   border-radius: 30px;
   position: absolute;
-  width: 80%;
+  width: 85%;
   margin-left: 7.5%;
   opacity: 1;
   margin-top: 9%;
@@ -274,7 +274,7 @@ body {
   border-color: transparent;
  }
 
- .music-type-img {
+ #headphone-img {
   margin-top: 100px;
   width: 100%;
   height: 80px;
