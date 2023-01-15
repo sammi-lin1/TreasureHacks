@@ -1,3 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.body{
+    background-color: #1B998B;
+    font-family: "Nunito";
+}
+
 #my-grid{
     min-height:100vh;
- }
+    
+}
+
+.timer-container{
+    border-radius: 20px;
+    background: rgb(255, 255, 255, .5);
+}
+
+/* .timer-header-parent {
+    text-align: center;
+}
+
+.timer-header-child {
+    padding-top: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+} */
+
+#timer-settings{
+    margin-top: 10px;
+    margin-left: 90%;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#timer{
+    margin-top: 1px;
+    color: white;
+    font-size: 72px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.timing-option{
+    margin-bottom: 1em;
+}
+
+
+#timer-button{
+    /* border-radius: 20px; */
+    margin-bottom: 10px;
+}
+
+/* MODALS */
+#timer-modal{
+    background-color: black;
+}
+
+
+
+
+
