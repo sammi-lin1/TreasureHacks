@@ -55,13 +55,9 @@ p {
     background-color: black;
 }
 
+/* END OF MODALS */
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
+
 
 .right-container{
     width:70%;
