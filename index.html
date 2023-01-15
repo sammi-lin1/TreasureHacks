@@ -29,71 +29,63 @@
           
           <!-- App Study Timer -->
           <div class="timer-container">
-            
-            
-              <div class="timer-header-child">
-                <button type="button" data-toggle="modal" data-target="#exampleModal" id="timer-settings" class="timer-header-settings">
-                  <i class="bi bi-gear-fill"></i>
-        
-                </button>
-           
+            <div class="timer-header-child">
+              <button type="button" data-toggle="modal" data-target="#exampleModal" id="timer-settings" class="timer-header-settings">
+                <i class="bi bi-gear-fill"></i>
+              </button>
             </div>
              
-              
-              
-            <div id="timer">00:00</script></div>
-            
-            
-            <button type="button" class="btn btn-light" id="timer-button"> START
-
-            </button>
-            
+            <div id="timer">00:00</div>
+            <button type="button" class="btn btn-light" id="timer-button"> START</button>
           </div>
-          
-          <div class="box">Box 2</div>
+          <!-- App Study Timer Ends-->
+
+          <div>
+            <div class="music-container" id="music-container">
+              <!-- <button id="ambience" class="">
+                <i>ambience</i>
+              </button> -->
+    
+              <div class="music-info">
+                <div class="progress-container" id="progress-container">
+                  <div class="progress" id="progress"></div>
+                </div>
+              </div>
+        
+              <audio src="music/wistful-rain.mp3" id="audio"></audio>
+    
+              <div class="navigation">
+                <button id="prev" class="action-btn">
+                  <i class="fas fa-backward"></i>
+                </button>
+                <button id="play" class="action-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button id="next" class="action-btn">
+                  <i class="fas fa-forward"></i>
+                </button>
+    
+              </div>
+            </div>
+    
+            <div class="music-type-container">
+              <button onclick="changeMusicType('cloud')" id="cloud-button" class="music-type-buttons"
+              data-toggle="tooltip" data-placement="bottom" title="ambience">
+                <img src="images/cloud.png" id="cloud-img" class="'music-type-img">
+              </button>
+              <button onclick="changeMusicType('lofi')" id="headphone-button" class="music-type-buttons"
+              data-toggle="tooltip" data-placement="bottom" title="lofi">
+                <img src="images/headphone.png" id="headphone-img" class="music-type-img">
+              </button>
+            </div>
+          </div>
         </div>
         <div class="col-6">
           <!-- Right column content goes here -->
           <div>The right side</div>
         </div>
         
-        <div class="music-container" id="music-container">
-          <!-- <button id="ambience" class="">
-            <i>ambience</i>
-          </button> -->
-
-          <div class="music-info">
-            <div class="progress-container" id="progress-container">
-              <div class="progress" id="progress"></div>
-            </div>
-          </div>
-    
-          <audio src="music/wistful-rain.mp3" id="audio"></audio>
-
-          <div class="navigation">
-            <button id="prev" class="action-btn">
-              <i class="fas fa-backward"></i>
-            </button>
-            <button id="play" class="action-btn">
-              <i class="fas fa-play"></i>
-            </button>
-            <button id="next" class="action-btn">
-              <i class="fas fa-forward"></i>
-            </button>
-
-          </div>
-        </div>
-
-        <div class="music-type-container">
-          <button onclick="changeMusicType('cloud')" id="cloud-button" class="music-type-buttons"
-          data-toggle="tooltip" data-placement="bottom" title="ambience">
-            <img src="images/cloud.png" id="cloud-img" class="'music-type-img">
-          </button>
-          <button onclick="changeMusicType('lofi')" id="headphone-button" class="music-type-buttons"
-          data-toggle="tooltip" data-placement="bottom" title="lofi">
-            <img src="images/headphone.png" id="headphone-img" class="music-type-img">
-          </button>
-        </div>
+        
 
       </div>
     
@@ -108,16 +100,12 @@
             </button>
           </div>
           <div class="modal-body">
-          
             <input type="number" min="1" value=25 class="timing-option" id="pomodoro"></input>
           </div>
-          <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div> -->
         </div>
       </div>
     </div>
+    <!-- Timer Modal Ends -->
 
     <script src="timer.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
