@@ -53,7 +53,7 @@ const progressContainer = document.getElementById('progress-container');
 const cover = document.getElementById('cover');
 
 // Song titles
-const songs = ['midsommar', 'wistful-rain'];
+let songs = ['blue-boi', 'purple-cat'];
 
 // Keep track of song
 let songIndex = 0;
@@ -125,6 +125,25 @@ function setProgress(e) {
   const duration = audio.duration;
 
   audio.currentTime = (clickX / width) * duration;
+}
+
+function changeMusicType(type) {
+  console.log(type)
+  if (type == 'cloud') {
+    songs = ['midsommar', 'wistful-rain'];
+    // const isPlaying = musicContainer.classList.contains('play');
+
+    songIndex = 0;
+    loadSong(songs[songIndex]);
+    playSong();
+
+  }
+  else if (type == 'lofi') {
+    songs = ['blue-boi', 'purple-cat'];
+    songIndex = 0;
+    loadSong(songs[songIndex]);
+    playSong();
+  }
 }
 
 // Event listeners
